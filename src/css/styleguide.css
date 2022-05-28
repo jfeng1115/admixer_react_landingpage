@@ -1,0 +1,20 @@
+:root { 
+  --black: #000000;
+  --ocean-green-pearl: #52bd94;
+  --white: #ffffff;
+  --x1c0732: #1c0732;
+ 
+  --font-size-l: 48px;
+  --font-size-m: 24px;
+  --font-size-s: 18px;
+  --font-size-xs: 16px;
+ 
+  --font-family-roboto: "Roboto", Helvetica;
+}
+.roboto-normal-white-16px {
+  color: var(--white);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 400;
+}
