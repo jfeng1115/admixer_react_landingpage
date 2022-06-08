@@ -1,4 +1,5 @@
 import {Component} from "react";
+import {Button, TextField} from "@mui/material";
 
 
 class Hero extends Component{
@@ -12,16 +13,12 @@ class Hero extends Component{
                         their
                         cross-channel campaigns
                     </div>
-                    <div className="frame-3">
-                        <div className="rectangle"></div>
+                    <form className="frame-3">
+                        <TextField className="rectangle" label="Your work email" variant="outlined" />
                         <div className="frame-4">
-                            <div className="get-a-demo roboto-normal-white-16px">Get a demo</div>
+                            <Button className="get-a-demo roboto-normal-white-16px">Get a demo</Button>
                         </div>
-                        <div className="frame-5">
-                            <div className="create-a-free-account">Create a free account</div>
-                            <img className="frame-6" src="img/frame@2x.png"/>
-                        </div>
-                    </div>
+                    </form>
                 </div>
                 <div className="hero-image">
                     <div className="overlap-group1">
