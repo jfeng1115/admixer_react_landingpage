@@ -1,24 +1,26 @@
+import {Button} from "@mui/material";
+import {Component} from 'react'
+import MenuListComposition from "./BasicMenu";
+import BasicMenu from "./BasicMenu";
 
-
-function Header() {
-    return (
-        <div className="header">
-            <div className="frame-container roboto-normal-white-16px">
-                <div className="frame">
-                    <div className="product">Product</div>
-                    <div className="pricing">Pricing</div>
-                    <div className="customers">Customers</div>
-                    <div className="docs">Docs</div>
-                    <div className="company">Company</div>
-                </div>
-                <div className="frame-1">
-                    <div className="sign-up">Sign up</div>
-                    <div className="frame-2">
-                        <div className="see-how-it-works">See how it works</div>
+class Header extends Component {
+    render() {
+        return (
+            <div className="header">
+                <div className="frame-container roboto-normal-white-16px">
+                    <div className="frame">
+                        <MenuListComposition className="product" firstItem="test1">Product</MenuListComposition>
+                        <BasicMenu className="pricing" title="Product" item1="Connectors" item2="Campaign Management" item3="Mix Media"></BasicMenu>
+                        <BasicMenu className="pricing" title="About" item1="Company" item2="Career" item3="Growth"></BasicMenu>
+                    </div>
+                    <div className="frame-1">
+                        <Button className="sign-up">Sign up</Button>
+                        <div className="frame-2">
+                            <div className="see-how-it-works">See how it works</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>);
+            </div>);
+    }
 }
-
 export default Header;
