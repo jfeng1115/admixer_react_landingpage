@@ -34,12 +34,13 @@ class Hero extends Component{
                         their
                         cross-channel campaigns
                     </div>
-                    <form className="frame-3" onSubmit={this.handleSubmit}>
-                        <TextField className="rectangle" label="Your work email" variant="outlined" value={email} onChange={this.handleChange}/>
-                        <div className="frame-4">
+                    <div className="cta-container">
+                        <form className="sign-up-form" onSubmit={this.handleSubmit}>
+                            <TextField className="rectangle" label="Your work email" variant="outlined" value={email}
+                                       onChange={this.handleChange}/>
                             <Button className="get-a-demo roboto-normal-white-16px">Get a demo</Button>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
                 <div className="hero-image">
                     <div className="overlap-group1">

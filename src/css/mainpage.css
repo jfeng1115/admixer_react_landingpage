@@ -5,35 +5,28 @@
   background-color: var(--x1c0732);
   display: flex;
   flex-direction: column;
+  height: 800px;
 }
 
 .mainpage .header {
   align-items: flex-start;
+  flex: 1;
   background-color: #00000033;
   display: flex;
+
 }
 
-.mainpage .frame-container {
+.mainpage .menu-container {
   align-items: center;
   background-color: var(--x1c0732);
   display: flex;
-  justify-content: flex-end;
   padding: 20px;
 }
 
-.mainpage .frame {
+.mainpage .sign-up-header-container {
   align-items: flex-start;
   display: flex;
-  padding: 5px 48px;
-}
-
-.mainpage .product {
-  letter-spacing: 0;
-  line-height: 20px;
-  min-height: 20px;
-  text-align: center;
-  white-space: nowrap;
-  width: 64px;
+  padding: 20px;
 }
 
 .mainpage .pricing {
@@ -43,36 +36,6 @@
   min-height: 20px;
   white-space: nowrap;
   width: 65px;
-}
-
-.mainpage .customers {
-  letter-spacing: 0;
-  line-height: 20px;
-  margin-left: 56px;
-  min-height: 20px;
-  text-align: center;
-  white-space: nowrap;
-  width: 88px;
-}
-
-.mainpage .docs {
-  letter-spacing: 0;
-  line-height: 20px;
-  margin-left: 40px;
-  min-height: 20px;
-  text-align: center;
-  white-space: nowrap;
-  width: 41px;
-}
-
-.mainpage .company {
-  letter-spacing: 0;
-  line-height: 20px;
-  margin-left: 40px;
-  min-height: 20px;
-  text-align: center;
-  white-space: nowrap;
-  width: 75px;
 }
 
 .mainpage .frame-1 {
@@ -111,23 +74,21 @@
 }
 
 .mainpage .hero {
-  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  left: 0;
-  min-height: 822px;
+  align-items: flex-start;
   padding: 40px;
-  top: 0;
+  height: 500px; /* todo: why do I need this ? */
 }
 
 .mainpage .made-by-marketers-for-marketers {
   color: var(--white);
+  flex: 1;
   font-family: var(--font-family-roboto);
   font-size: var(--font-size-l);
   font-weight: 400;
-  letter-spacing: 0;
-  line-height: 56px;
-  margin-top: 19px;
+  text-align: left;
+
 }
 
 .mainpage .join-20000-markete {
@@ -135,42 +96,38 @@
   font-family: var(--font-family-roboto);
   font-size: var(--font-size-m);
   font-weight: 400;
-  letter-spacing: 0;
-  line-height: 40px;
-  margin-top: 20px;
+
   padding: 0 10px;
   text-align: left;
+  flex: 1;
 }
 
-.mainpage .frame-3 {
+.mainpage .cta-container {
+  flex: 1;
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  margin-top: 23px;
-  min-height: 192px;
+
 }
 
 .mainpage .rectangle {
+  flex: 1;
   background-color: #352446;
   border-radius: 5px;
   box-shadow: 0px 0px 0px #352446;
-}
-
-.mainpage .frame-4 {
-  align-items: flex-start;
-  background-color: var(--ocean-green-pearl);
-  border-radius: 5px;
-  display: flex;
-  justify-content: flex-end;
+  width: 100%;
 }
 
 .mainpage .get-a-demo {
   letter-spacing: 0;
+  background-color: var(--ocean-green-pearl);
   line-height: 20px;
   min-height: 20px;
   text-align: center;
   white-space: nowrap;
-  width: 92px;
+  flex:1;
+  align-items: flex-start;
+  width: 100%
 }
 
 .mainpage .frame-5 {
@@ -202,6 +159,7 @@
 .mainpage .hero-container {
   display: flex;
   align-items: start;
+  flex: 2;
 }
 
 
