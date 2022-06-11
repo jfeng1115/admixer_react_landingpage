@@ -5,32 +5,25 @@
   background-color: var(--x1c0732);
   display: flex;
   flex-direction: column;
-  height: 1024px;
-  width: 1440px;
 }
 
 .mainpage .header {
   align-items: flex-start;
   background-color: #00000033;
   display: flex;
-  min-width: 1440px;
 }
 
 .mainpage .frame-container {
   align-items: center;
   background-color: var(--x1c0732);
   display: flex;
-  height: 76px;
   justify-content: flex-end;
-  min-width: 1440px;
-  padding: 0 48px;
+  padding: 20px;
 }
 
 .mainpage .frame {
   align-items: flex-start;
   display: flex;
-  height: 32px;
-  min-width: 578px;
   padding: 5px 48px;
 }
 
@@ -87,7 +80,6 @@
   display: flex;
   justify-content: flex-end;
   margin-left: 161px;
-  min-width: 300px;
   padding: 0 0.0px;
 }
 
@@ -118,23 +110,14 @@
   white-space: nowrap;
 }
 
-.mainpage .hero-container {
-  height: 822px;
-  margin-top: 67px;
-  position: relative;
-  width: 1130px;
-}
-
 .mainpage .hero {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
   left: 0;
   min-height: 822px;
-  padding: 120px 80px;
-  position: absolute;
+  padding: 40px;
   top: 0;
-  width: 1130px;
 }
 
 .mainpage .made-by-marketers-for-marketers {
@@ -145,8 +128,6 @@
   letter-spacing: 0;
   line-height: 56px;
   margin-top: 19px;
-  min-height: 168px;
-  width: 348px;
 }
 
 .mainpage .join-20000-markete {
@@ -157,8 +138,8 @@
   letter-spacing: 0;
   line-height: 40px;
   margin-top: 20px;
-  min-height: 160px;
-  width: 374px;
+  padding: 0 10px;
+  text-align: left;
 }
 
 .mainpage .frame-3 {
@@ -167,15 +148,12 @@
   flex-direction: column;
   margin-top: 23px;
   min-height: 192px;
-  width: 405px;
 }
 
 .mainpage .rectangle {
   background-color: #352446;
   border-radius: 5px;
   box-shadow: 0px 0px 0px #352446;
-  height: 56px;
-  width: 405px;
 }
 
 .mainpage .frame-4 {
@@ -183,11 +161,7 @@
   background-color: var(--ocean-green-pearl);
   border-radius: 5px;
   display: flex;
-  height: 56px;
   justify-content: flex-end;
-  margin-top: 36px;
-  min-width: 405px;
-  padding: 17px 156px;
 }
 
 .mainpage .get-a-demo {
@@ -202,7 +176,6 @@
 .mainpage .frame-5 {
   align-items: flex-start;
   display: flex;
-  height: 36px;
   margin-top: 8px;
   min-width: 405px;
   padding: 5px 0;
@@ -222,33 +195,36 @@
 
 .mainpage .frame-6 {
   align-self: center;
-  height: 24px;
   margin-left: 4px;
   width: 24px;
 }
 
-.mainpage .hero-image {
-  align-items: flex-start;
+.mainpage .hero-container {
   display: flex;
-  height: 351px;
-  left: 645px;
-  min-width: 485px;
-  position: absolute;
-  top: 181px;
+  align-items: start;
+}
+
+
+.mainpage .hero-image {
+  display: none;
+  align-items: flex-start;
   transform: rotate(-180deg);
 }
 
+@media screen and (min-width: 800px) {
+  .mainpage .hero-image {
+    display: flex;
+  }
+}
+
 .mainpage .overlap-group1 {
-  height: 351px;
   position: relative;
   width: 485px;
 }
 
 .mainpage .image {
-  height: 351px;
   left: 0;
   object-fit: cover;
-  position: absolute;
   top: 0;
   transform: rotate(-180deg);
   width: 485px;
@@ -258,17 +234,14 @@
   height: 33px;
   left: 277px;
   object-fit: cover;
-  position: absolute;
   top: 157px;
   transform: rotate(-180deg);
   width: 44px;
 }
 
 .mainpage .test-1 {
-  height: 36px;
   left: 138px;
   object-fit: cover;
-  position: absolute;
   top: 74px;
   transform: rotate(-180deg);
   width: 48px;
