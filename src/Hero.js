@@ -3,7 +3,28 @@ import {Button, TextField} from "@mui/material";
 
 
 class Hero extends Component{
+    state = {"email":""}
+
+    handleChange =(e) => {
+        this.setState({"email": e.target.value})
+    }
+
+    handleSubmit = (e) => {
+        e.preventDefault()
+        console.log(this.state.email)
+        fetch('/', {
+            method: 'post',
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                "email": this.state.email
+            })
+        });
+    }
+
     render() {
+        const { email } = this.state;
         return (
             <div className="hero-container">
                 <div className="hero">
@@ -13,8 +34,8 @@ class Hero extends Component{
                         their
                         cross-channel campaigns
                     </div>
-                    <form className="frame-3">
-                        <TextField className="rectangle" label="Your work email" variant="outlined" />
+                    <form className="frame-3" onSubmit={this.handleSubmit}>
+                        <TextField className="rectangle" label="Your work email" variant="outlined" value={email} onChange={this.handleChange}/>
                         <div className="frame-4">
                             <Button className="get-a-demo roboto-normal-white-16px">Get a demo</Button>
                         </div>
