@@ -38,7 +38,7 @@ class Hero extends Component{
                         <form className="sign-up-form" onSubmit={this.handleSubmit}>
                             <TextField className="rectangle" label="Your work email" variant="outlined" value={email}
                                        onChange={this.handleChange}/>
-                            <Button className="get-a-demo roboto-normal-white-16px">Get a demo</Button>
+                            <Button className="get-a-demo roboto-normal-white-16px" type="submit">Get a demo</Button>
                         </form>
                     </div>
                 </div>
